@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
-  database: deadstock_production
-  username: deadstock
+  host:  <%= ENV['DEADSTOCK_DATABASE_HOST'] %>
+  database: <%= ENV['DEADSTOCK_DATABASE_DATABASE'] %>
+  username: <%= ENV['DEADSTOCK_DATABASE_USER'] %>
+  port:  <%= ENV['DEADSTOCK_DATABASE_PORT'] %>
   password: <%= ENV['DEADSTOCK_DATABASE_PASSWORD'] %>
+  #uri:  <%= ENV['DEADSTOCK_DATABASE_URI'] %>
