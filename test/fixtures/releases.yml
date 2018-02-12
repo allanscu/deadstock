@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  release_date: 2018-02-12 15:27:03
+  name: MyString
+  description: MyText
+  style: MyString
+  abv: 9.99
+  case_vol: 1
+  can_limit: 1
+  price: 9.99
+  additional: MyText
+  canning_date: 2018-02-12 15:27:03
+  canning_phrase: MyString
+  label_inspiration: MyText
+  instagram_url: MyString
+
+two:
+  number: 1
+  release_date: 2018-02-12 15:27:03
+  name: MyString
+  description: MyText
+  style: MyString
+  abv: 9.99
+  case_vol: 1
+  can_limit: 1
+  price: 9.99
+  additional: MyText
+  canning_date: 2018-02-12 15:27:03
+  canning_phrase: MyString
+  label_inspiration: MyText
+  instagram_url: MyString

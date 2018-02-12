@@ -1,0 +1,87 @@
+<%= form_with(model: release, local: true) do |form| %>
+  <% if release.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(release.errors.count, "error") %> prohibited this release from being saved:</h2>
+
+      <ul>
+      <% release.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.number_field :number, id: :release_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :release_date %>
+    <%= form.datetime_select :release_date, id: :release_release_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :release_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :release_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :style %>
+    <%= form.text_field :style, id: :release_style %>
+  </div>
+
+  <div class="field">
+    <%= form.label :abv %>
+    <%= form.text_field :abv, id: :release_abv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :case_vol %>
+    <%= form.number_field :case_vol, id: :release_case_vol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :can_limit %>
+    <%= form.number_field :can_limit, id: :release_can_limit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :release_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additional %>
+    <%= form.text_area :additional, id: :release_additional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :canning_date %>
+    <%= form.datetime_select :canning_date, id: :release_canning_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :canning_phrase %>
+    <%= form.text_field :canning_phrase, id: :release_canning_phrase %>
+  </div>
+
+  <div class="field">
+    <%= form.label :label_inspiration %>
+    <%= form.text_area :label_inspiration, id: :release_label_inspiration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :instagram_url %>
+    <%= form.text_field :instagram_url, id: :release_instagram_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

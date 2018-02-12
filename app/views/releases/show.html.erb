@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @release.number %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @release.release_date %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @release.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @release.description %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @release.style %>
+</p>
+
+<p>
+  <strong>Abv:</strong>
+  <%= @release.abv %>
+</p>
+
+<p>
+  <strong>Case vol:</strong>
+  <%= @release.case_vol %>
+</p>
+
+<p>
+  <strong>Can limit:</strong>
+  <%= @release.can_limit %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @release.price %>
+</p>
+
+<p>
+  <strong>Additional:</strong>
+  <%= @release.additional %>
+</p>
+
+<p>
+  <strong>Canning date:</strong>
+  <%= @release.canning_date %>
+</p>
+
+<p>
+  <strong>Canning phrase:</strong>
+  <%= @release.canning_phrase %>
+</p>
+
+<p>
+  <strong>Label inspiration:</strong>
+  <%= @release.label_inspiration %>
+</p>
+
+<p>
+  <strong>Instagram url:</strong>
+  <%= @release.instagram_url %>
+</p>
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>
