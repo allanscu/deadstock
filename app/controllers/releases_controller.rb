@@ -1,4 +1,4 @@
-class ReleasesController < ApplicationController
+class ReleasesController < BlogController
   before_action :set_release, only: [:show, :edit, :update, :destroy]
 
   # GET /releases
