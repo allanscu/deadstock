@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Use Twitter Bootstrap
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '4.0.0.alpha3'
 
 # Friendly_ID
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
