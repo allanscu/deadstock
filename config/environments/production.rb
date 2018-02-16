@@ -91,5 +91,5 @@ Rails.application.configure do
   
   
   # Tinymce
-  config.assets.precompile << "tinymce-jquery.js"
+  config.assets.precompile = true
 end
