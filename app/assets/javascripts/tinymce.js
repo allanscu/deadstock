@@ -1,12 +1,10 @@
-$(document).on('ready page:load', function () {
+$(document).on("turbolinks:load", function () {
   if (typeof tinyMCE != 'undefined') {
+	tinyMCE.remove();
     tinyMCE.init({
-      selector: "textarea.tinymce",
-      toolbar: [
-        "styleselect | bold italic | alignleft aligncenter alignright alignjustify",
-        "bullist numlist outdent indent | link image | code | codesample"
-      ],
-      plugins: "image,link,code,codesample,autoresize,imagetools,media,table,insertdatetime,charmap,print,preview,anchor,searchreplace,visualblocks,fullscreen"
+		selector:'textarea#post_body',
+		plugins: "codesample image media link code ",
+		toolbar: "undo redo | styleselect | bold italic link | codesample image media | code"
     });
   } else {
     setTimeout(arguments.callee, 50);
