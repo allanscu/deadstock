@@ -75,12 +75,6 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  
-  # TinyMCE settings
-  config.assets.digest = false
-
-  # Add to settle tinymce issue
-  config.assets.debug = true
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
