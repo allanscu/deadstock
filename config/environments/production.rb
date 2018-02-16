@@ -1,8 +1,8 @@
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+  # Settings specified here will take precedence over those in config/application.rb
   
   # Tiny
-  config.public_file_server.enabled = true
+  config.tinymce.install = :compile
 
   # Code is not reloaded between requests.
   config.cache_classes = true
