@@ -1,3 +1,14 @@
+<script>
+	document.addEventListener("turbolinks:load", function() {
+		tinymce.remove();
+		tinymce.init({
+			selector:'textarea#post_body',
+			plugins: "codesample image media link code ",
+			toolbar: "undo redo | styleselect | bold italic link | codesample image media | code"
+		});
+	})
+</script>
+
 <%= form_for(post, url: url)do |form| %>
 	<% if post.errors.any? %>
 		<div id="error_explanation">
