@@ -1,4 +1,4 @@
-$(document).on("turbolinks:load", function () {
+$(document).on('turbolinks:load', function () {
   if (typeof tinyMCE != 'undefined') {
 	tinyMCE.remove();
     tinyMCE.init({
