@@ -54,6 +54,9 @@ gem 'annotate'
 # will_paginate
 gem 'will_paginate', '~> 3.1.0'
 
+# Acts as taggable on
+gem 'acts-as-taggable-on', '~> 5.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

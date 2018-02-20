@@ -12,7 +12,7 @@
 	<% end %>
 
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<div class="card" style="width: 20rem;">
 			  <div class="card-block">
 				<% if @post.new_record? %>
@@ -44,6 +44,12 @@
 				    </div>
 			    </li>
 			    <li class="list-group-item">
+				    <div class="field">
+				      <%= form.label 'Tags' %>
+				      <%= form.text_area :tag_list, class: 'form-control' %>
+				    </div>
+			    </li>
+			    <li class="list-group-item">
 					<div class="actions">
 						<%= form.submit "Save blog post", class: 'btn btn-success btn-lg btn-block' %>
 					</div>
@@ -54,6 +60,9 @@
 				<%= link_to 'Show', @post %> |
 			<% end %>
 			<%= link_to 'Back', authors_posts_path %>
+		</div>
+		
+		<div class="col-md-1">
 		</div>
 	
 		<div class="col-md-8">
